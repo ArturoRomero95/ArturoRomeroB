@@ -1,0 +1,260 @@
+/*ESTILOS GENERALES*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #d6ecf3;
+}
+
+/*ESTILOS MENU*/
+
+.icon-menu{
+    width: 45px;
+    height: 45px;
+    color: #83C5BE;
+    margin-right: 5px;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 170px;
+    height: 100vh;
+    padding-top: 1.5rem;
+    background-color: #006D77;
+    transform: translateX(-350px);
+    transition: transform 0.5s;
+    z-index: 10;
+}
+
+.nav-show{
+    transform: translateX(-100px);
+}
+
+.nav-show .toggle-menu{
+    left: 170px;
+    top: .5remx;
+    color: black;
+}
+
+.toggle-menu{
+    position: absolute;
+    left: 350px;
+    font-size: 2.5rem;
+    color: #111d4a;
+    width: 30px;
+    height: 30px;
+    padding: .5rem 1rem;
+    z-index: 100;
+}
+
+.main-menu{
+    padding-left: 0;
+    padding-top: 25vh;
+}
+
+.main-menu-show{
+    transform: translateX(260px);
+}
+
+.main-menu-show li a p{
+    display: none;
+}
+
+.main-menu-show .icon-menu{
+    transform: translateX(-170px);
+}
+
+.main-menu__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.main-menu__link{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    color: #83C5BE;
+    text-decoration: none;
+    align-items: center;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 768px){
+
+    .main {
+        margin-left: 100px;
+    }
+    
+    .nav {
+        transform: translateX(-80px);
+    }
+
+    .icon-menu {
+       transform: translateX(80px);
+    }
+    
+    .main-menu__link p{
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .main {
+        margin-left: 150px;
+    }
+    
+    .nav {
+        transform: translateX(0);
+    }
+    
+    .icon-menu {
+       transform: translateX(0);
+    }
+
+    .main-menu__link p{
+        display: block;
+    }
+}
+
+/*ESTILOS MAIN*/
+
+.main{
+    margin-left: 0px;
+    min-height: 100vh;
+    padding-top: 2.5rem;
+    background-image: linear-gradient(to bottom, #d6ecf3, #aae0f0);
+    overflow: hidden;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 200px;
+    border: solid #7b4b0c 5px;
+}
+
+.title{
+    font-family: 'Pathway Extreme', sans-serif;
+    color: #7b4b0c;
+    text-align: center;
+    font-size: xx-large;
+    margin: 3.5% 0;
+}
+
+.line{
+    border-top: #111d4a solid 2px;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.present{
+    text-align: center;  
+    color: #d6ecf3; 
+}
+
+.present div{
+    width: 40%;
+    background-color: #006D77;
+    border-radius: 15px;
+    margin: 2% auto;
+    padding: 3%;
+}
+
+.present p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.program{
+    text-align: center;
+}
+
+#react{
+    width: 100px;
+}
+
+.icons img{
+    width: 80px;
+    margin: 0 15px 3.5% 15PX;
+}
+
+.icons img:hover{
+    filter: drop-shadow(2px 2px 5px #132564);
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.certificate img{
+    width: 200px;
+    margin: 10px 30px
+}
+
+.certificate :hover{
+    transform: scale(3);
+    transition-duration: 1s;
+}
+
+.container-proyects{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.proyects{
+    text-align: center;
+    margin: 10px 5%;
+}
+
+.proyects img{
+    width: 150px;
+}
+
+.proyects p{
+    margin-top: 10px;
+    padding: 15px;
+    width: 150px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #006D77;
+    color: #d6ecf3;
+    border-radius: 15px;
+}
+
+.contact{
+    text-align: center;
+    z-index: 1;
+}
+
+.contact a img{
+    width: 110px;
+    margin: 0 2% 5% 2% ;
+    animation-name: img-latido;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes img-latido{
+    0%{
+        transform: scale(1);
+    }
+    15%{
+        transform: scale(1.1);
+    }
+    35%{
+        transform: scale(1.3);
+    }
+}
