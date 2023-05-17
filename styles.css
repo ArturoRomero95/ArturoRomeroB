@@ -233,6 +233,12 @@
     border-radius: 15px;
 }
 
+.proyects a{
+    color: #d6ecf3;
+    font-size: 13px;
+    text-decoration: none;
+}
+
 .contact{
     text-align: center;
     z-index: 1;
